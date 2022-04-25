@@ -1,26 +1,46 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calculadora JS</title>
-        <script src="js/main.js"></script>
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body class="flex">
-        <div>
-            <input type="number" placeholder="inserte un valor..." id="valor1"><br>
-            <input type="number" placeholder="inserte un valor..." id="valor2"><br>
-            <select name="" id="operaciones">
-                <option value="sumar">sumar (+)</option>
-                <option value="restar">restar (-)</option>
-                <option value="multiplicar">multiplicar (*)</option>
-                <option value="dividir">dividir (/)</option>
-            </select><br>
-            <input type="submit" value="Calcular" onclick="calcular()">
-            <p id="resultado"></p>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- hoja de estilos -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- título de página -->
+    <title>Título de la página</title>
+    <!-- ícono de pàgina -->
+    <!-- fuentes -->
+    <!-- javascript -->
+</head>
+
+<body class="flex">
+    <div class="row styles-div">
+        <div class="column-1">
+            <p>Calculador de propinas</p>
         </div>
-    
-    </body>
-    </html>
+        <div class="column-1">
+            <p>Total de la cuenta</p>
+            <input id="valor1" type="number" placeholder="inserte un valor...">
+        </div>
+        <div class="column-1">
+            <p>¿Que tal el servicio?</p>
+            <select name="" id="Operacion">
+                <option value="sumar">0% Fatal</option>
+                <option value="restar">30% Mal</option>
+                <option value="multiplicar">50% Ni bien ni mal</option>
+                <option value="dividir">70% Bien</option>
+                <option value="dividir">100% Perfecto</option>
+            </select>
+        </div>
+        <div class="column-1">
+            <p>¿Cuantas personas van a pagar?</p>
+            <input class="color-submit " type="submit" value="Calcular" onclick="Calcular()">
+        </div>
+        <div class="column-1">
+            <p></p>
+        </div>
+    </div>
+</body>
+
+</html>
